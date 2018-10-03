@@ -1,0 +1,39 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+ }
+ body {
+ 	min-height: 200vh;
+ 	font-family: 'arial', 'sans-serrif';
+ }
+ .wrapper {
+ 	margin: 20px 60px;
+ 	font-size: 18px; 
+ 	line-height: 200%;
+ }
+ nav {
+ 	position: fixed;
+ 	bottom: -270px;
+ 	left: 0;
+ 	right: 0;
+ 	background-color: #222;
+ 	height: 300px;
+ 	transition: .2s;
+ }
+ nav.on {
+ 	bottom: 0;
+ }
+ .arrow {
+ 	position: fixed;
+ 	bottom: 60px;
+ 	right: 30px;
+ 	font-size: 40px;
+ 	cursor: pointer;
+ 	z-index: 1;
+ 	transition: .2s;
+ }
+ .arrow.on {
+ 	bottom: 330px;
+ 	transform: rotate(180deg);
+ }
